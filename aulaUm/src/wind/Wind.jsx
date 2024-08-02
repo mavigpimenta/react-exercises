@@ -7,18 +7,17 @@ export const Wind = () => {
     return (
         <>
 
+            <nav className="bg-gray-300 p-4">
+                <div className="container mx-auto flex justify-between items-center">
+                    <a href="#" className="text-gray-800 text-lg font-bold">Mavi</a>
+                        <div className="flex space-x-4">
+                            <a href="#" className="text-gray-800 hover:text-gray-600">Link 1</a>
+                            <a href="#" className="text-gray-800 hover:text-gray-600">Link 2</a>
+                            <a href="#" className="text-gray-800 hover:text-gray-600">Link 3</a>
+                        </div>
+                </div>
+            </nav>
             <div className="flex flex-row gap-4 justify-between p-4 items-center w-full h-screen">
-                <nav className="bg-gray-300 p-4">
-                    <div className="container mx-auto flex justify-between items-center">
-                        <a href="#" className="text-gray-800 text-lg font-bold">Mavi</a>
-                            <div className="flex space-x-4">
-                                <a href="#" className="text-gray-800 hover:text-gray-600">Link 1</a>
-                                <a href="#" className="text-gray-800 hover:text-gray-600">Link 2</a>
-                                <a href="#" className="text-gray-800 hover:text-gray-600">Link 3</a>
-                            </div>
-                    </div>
-                </nav>
-                
                 <button className="bg-gray-800 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded z-50" onClick={() => setIsTextVisible(!isTextVisible)}>Butão</button>
                 <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
                     <img className="w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR36zw6VGtb42jzmD3SIzVYwL427XczPfJ2e8Uk-p-rsWxBj8wTu0_lgW7bDxZisobxqyg&usqp=CAU" alt=""></img>
