@@ -4,9 +4,10 @@ import { Login } from './Login/components/login'
 import { Navbar } from './Home/components/Navbar'
 import { Home } from './Home/Home' 
 import '../src/index.css'
+import { Wind } from './wind/Wind'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Home></Home>
+    <Wind></Wind>
   </React.StrictMode>,
 )
