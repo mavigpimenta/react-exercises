@@ -6,7 +6,6 @@ export const Wind = () => {
 
     return (
         <>
-
             <nav className="bg-gray-300 p-4">
                 <div className="container mx-auto flex justify-between items-center">
                     <a href="#" className="text-gray-800 text-lg font-bold">Mavi</a>

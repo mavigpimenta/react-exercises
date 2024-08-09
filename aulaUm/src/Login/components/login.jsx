@@ -2,16 +2,19 @@ import { useState } from "react"
 import { StyledForm, StyledButton, StyledInput, MainContainer } from "./style"
 import { toast, ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
+import { useNavigate } from "react-router-dom";
 
 export const Login = () => {
     const [login, setLogin] = useState("");
     const [password, setPassword] = useState("");
+    const navigate = useNavigate();
 
     const handleLogin = (e) => {
         e.preventDefault();
         console.log("bunda")
         if (login == "mavi" && password == "namodojoao") {
             toast.success("Login bem-sucedido!")
+            navigate("/list")
         } else {
             toast.error("Senha ou Login incorretos!")
         }
